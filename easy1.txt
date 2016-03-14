@@ -1,0 +1,53 @@
+Q1:
+
+  It will print the full array since uniq is a non-destructive method.
+
+Q2:
+
+  Exclamation mark can mean "not" when used in front of a value or "=" or "<>" operators. It can also signify a destructive method which will mutate the caller.
+
+  The question mark is used to signify a ternary statement where the conditional will result in one of two options. It can also signify a true/false result from a method when used at the end of the method name.
+
+  1. "!=" means not equal to. It is used in a conditional statement.
+  2. "!" in front of a variable creates a boolean asking whether the variable is "not true". If the variable is false, true will be returned.
+  3. "!" after a method indicates it is destructive and will mutate the caller.
+  4. "?" before something is used as a ternary operator for an if/else statement.
+  5. "?"" after something indicates it returns a boolean (true/false)
+  6. "!!" in front of a variable creates a boolean asking whether the variable is "not not true" or double-negative aside "true". If the variable isn't false or nil, true will be returned.
+
+Q3.
+
+  advice.gsub!('important', 'urgent')
+
+Q4.
+
+  numbers.delete_at(1) removes the value at index of 1, the second item in the array, number 2.
+  numbers.delete(1) removes the value equal to 1 which would be the first item in the array, number 1.
+
+Q5.
+
+  (10..100).include?(42)
+
+Q6.
+
+  famous_words = "Four score and " + famous_words
+  famous_words.prepend("Four score and ")
+
+Q7.
+
+  42
+
+Q8.
+
+  flintstones.flatten!
+
+Q9.
+
+  flintstones.select { |name, _| name == "Barney" }
+
+Q10.
+
+  flintstones_hash = {}
+  flintstones.each_with_index do |name, idx|
+    flintstones_hash[name] = idx
+  end

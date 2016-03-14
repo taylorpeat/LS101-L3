@@ -1,0 +1,24 @@
+Q1.
+
+  flintstones = %w(Fred Barney Wilma Betty BamBam Pebbles)
+
+Q2.
+
+  flintstones << "Dino"
+
+Q3.
+
+  flintstones += %w(Dino Hoppy) - makes new array
+  flintstones.concat(%w(Dino Hoppy)) - edits array in place
+
+Q4.
+
+  advice = advice.slice!(/house.*/)
+
+Q5.
+
+  statement.scan("t").size
+
+Q6.
+
+  title.center(40)

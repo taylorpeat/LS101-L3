@@ -1,0 +1,45 @@
+Q1.
+
+  ages["Spot"]
+  ages.key?("Spot")
+  ages.include?("Spot")
+
+Q2.
+
+  ages.values.inject(:+)
+
+Q3.
+
+  ages.select { |_, age| age < 100 }
+
+Q4.
+
+  munsters_description.capitalize
+  munsters_description.swapcase
+  munsters_description.downcase
+  munsters_description.upcase
+
+Q5.
+
+  ages.merge!(additional_ages)
+
+Q6.
+
+  ages.values.min
+
+Q7.
+
+  advice.match("Dino")
+
+Q8.
+    
+  flintstones.find_index {|name| /Be.*/.match(name) }
+
+Q9.
+
+  flintstones.map! { |name| name[0..2] }
+
+Q10.
+
+  flintstones.map! { |name| name[0..2] }
+  
