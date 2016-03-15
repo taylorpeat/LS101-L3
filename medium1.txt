@@ -1,0 +1,63 @@
+Q1.
+
+  10.times { |i| == " " * i + "The Flintstones Rock!" }
+
+Q2.
+
+  letter_frequency = {}
+  statement.chars.each do |letter|
+    next unless ("a".."z").include?(letter.downcase)
+    letter_frequency[letter] = 0 unless letter_frequency[letter]
+    letter_frequency[letter] += 1
+  end
+
+Q3.
+
+  This is because you are trying to add a string and an integer. You can use the to_s method on the integer value or you could use string interpolation.
+
+Q4.
+
+  The each method operates by iterating through the index values of the array. By removing a value from the string, when the method moves to the next index value it will be skipping a value if an earlier value in the array was removed.
+
+  Output 1: 13
+
+  Output 2: 12
+
+
+Q5.
+
+  def factors(number)
+    divisors = []
+    for dividend in 1..number.abs
+      divisors << dividend if number % dividend == 0
+    end
+    divisors
+  end
+
+  Bonus 1: Makes sure there is no remainder ie. it is actually a factor.
+
+  Bonus 2: The last thing in the method is returned. This makes sure it's the array of divisors.
+
+Q6.
+  
+  The difference is that << will mutate the existing array in memory and the caller while += will create a new array to store the information.
+
+Q7.
+
+  Limit is defined as a local variable outside of the method and thus is not available. If you move the limit variable into the method, pass it as an argument or set it as a constant it would work.
+
+Q8.
+
+  def titleize(phrase)
+    phrase.gsub(/\w+/) { |word| word.capitalize }
+  end
+
+Q9.
+
+  munsters.each do |name, attributes|
+    munsters[name]["age_group"] = case attributes["age"]
+                                when 0..17 then "kid"
+                                when 18..64 then "adult"
+                                when 65..1000 then "senior"
+                                end
+  end

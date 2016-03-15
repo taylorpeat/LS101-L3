@@ -1,0 +1,48 @@
+Q1.
+
+  error, uninitialized variable
+
+Q2.
+
+  { a: 'hi there'}
+
+Q3.
+
+  A) "one is: one"
+     "two is: two"
+     "three is: three"
+
+  B) "one is: one"
+     "two is: two"
+     "three is: three"
+
+  C) "one is: two"
+     "two is: three"
+     "three is: one"
+
+Q4.
+  
+ 
+  def hexadecimal
+   characters = []
+    (0..9).each { |num| characters << num.to_s }
+    ('a'..'f').each { |let| characters << let }
+    blank_hex = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    32.times do
+      blank_hex.sub!('x', characters.sample)
+    end
+    blank_hex
+  end
+
+Q5.
+
+  def dot_separated_ip_address?(input_string)
+    dot_separated_words = input_string.split(".")
+    return false unless dot_separated_words.size == 4
+
+    while dot_separated_words.size > 0 do
+      word = dot_separated_words.pop
+      return false unless is_a_number?(word)
+    end
+    true
+  end

@@ -1,0 +1,37 @@
+Q1.
+
+  munsters.inject(0) do |sum, munster|
+    munster[1]["gender"] == "male" ? sum + munster[1]["age"] : sum
+  end
+
+Q2.
+
+  munsters.each do |munster|
+    puts "#{munster[0]} is a #{munster[1]['age']} year old #{munster[1]['gender']}"
+  end
+  
+  Better with each_pair like answer.
+
+Q3.
+
+  It is better to pass the results back explicitly rather than mutating the method arguments.
+
+Q4.
+
+  sentence.split(/\W+/).reverse.join(' ') + '.'
+
+Q5.
+
+  answer is not changed by the method since it uses the += method. 42 - 8 = 34
+
+Q6.
+
+  The hash is being changed directly by the method.
+
+Q7.
+
+  Paper
+
+Q8.
+
+  no
